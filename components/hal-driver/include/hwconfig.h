@@ -1,0 +1,24 @@
+
+// I2C Configuration for Keypad
+#define I2C_MASTER_FREQUENCY 100000
+#define I2C_PORT I2C_NUM_0
+#define I2C_ADDR_KEYPAD 0x20
+
+// GPIO Pins for Keypad
+#define KEYPAD_IO_L GPIO_NUM_36
+#define KEYPAD_IO_R GPIO_NUM_34
+#define KEYPAD_IO_MENU GPIO_NUM_35
+#define I2C_SDA GPIO_NUM_21
+#define I2C_SCL GPIO_NUM_22
+
+// I2S Configuration
+#define I2S_NUM I2S_NUM_0
+#define I2S_BCLK_PIN 26
+#define I2S_WS_PIN 25
+#define I2S_DOUT_PIN 19
+
+// SD Card Configuration
+#define SDMMC_SLOT_WIDTH 1
+#define SDMMC_SLOT_FLAGS SDMMC_SLOT_FLAG_INTERNAL_PULLUP
+#define SDCARD_MAX_FILES 5
+#define SDCARD_ALLOCATION_UNIT_SIZE (16 * 1024)
